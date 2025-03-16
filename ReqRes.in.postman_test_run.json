@@ -1,0 +1,721 @@
+{
+	"id": "a62e3e6e-c0df-4e71-aee3-95b691e70c6a",
+	"name": "ReqRes.in",
+	"timestamp": "2025-03-16T10:17:23.838Z",
+	"collection_id": "40242326-42b6b9a2-4651-4378-9bec-478a2f1d56fc",
+	"folder_id": 0,
+	"environment_id": "40242326-f5b008f0-2bd9-4a6f-ae82-f152d8e6a7b6",
+	"totalPass": 54,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-03-16T10:17:09.803Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e90489e5-8e9b-4fee-a517-9daf3691b72d",
+			"name": "List Users",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 1141,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Verify Page Data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify Page Data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1141
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Verify Page Data": true
+				}
+			]
+		},
+		{
+			"id": "36262cac-ef0b-4a51-aa49-a8db2f6df7ef",
+			"name": "List a single user",
+			"url": "https://reqres.in/api/users/1",
+			"time": 82,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Correct user Fetched": true,
+				"Response body contains id, email, first_name and last_name": true,
+				"Validate the user's email format": true,
+				"Verify that the response body matches the expected schema for user details": true,
+				"Ensure that the response body does not contain any sensitive information": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct user Fetched": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains id, email, first_name and last_name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the user's email format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the response body matches the expected schema for user details": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Ensure that the response body does not contain any sensitive information": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				82
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Correct user Fetched": true,
+					"Response body contains id, email, first_name and last_name": true,
+					"Validate the user's email format": true,
+					"Verify that the response body matches the expected schema for user details": true,
+					"Ensure that the response body does not contain any sensitive information": true
+				}
+			]
+		},
+		{
+			"id": "15b62d54-2a66-4292-913b-10f4b17e247b",
+			"name": "List a not found user",
+			"url": "https://reqres.in/api/users/23",
+			"time": 633,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"User not found": true,
+				"Response time is less than 2000ms": true,
+				"Response data is empty": true
+			},
+			"testPassFailCounts": {
+				"User not found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response data is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				633
+			],
+			"allTests": [
+				{
+					"User not found": true,
+					"Response time is less than 2000ms": true,
+					"Response data is empty": true
+				}
+			]
+		},
+		{
+			"id": "c03f9e8c-a9c0-4efd-b723-28920d03aa9e",
+			"name": "List all Resource",
+			"url": "https://reqres.in/api/unknown",
+			"time": 42,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Verify Page Data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify Page Data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				42
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Verify Page Data": true
+				}
+			]
+		},
+		{
+			"id": "cabb2a32-751c-4b01-ac29-f22dee200fb6",
+			"name": "List Single Resource",
+			"url": "https://reqres.in/api/unknown/2",
+			"time": 575,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				575
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "fcdb1ad5-5c24-4921-aadb-599345340ca9",
+			"name": "Single resource not found",
+			"url": "https://reqres.in/api/unknown/23",
+			"time": 874,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 404": true,
+				"Response data is empty": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response data is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				874
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 404": true,
+					"Response data is empty": true
+				}
+			]
+		},
+		{
+			"id": "1033e09b-ef31-4b8c-99f5-83e74aaa6061",
+			"name": "Create User",
+			"url": "https://reqres.in/api/users",
+			"time": 720,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time is less than 2000ms": true,
+				"Response data contains name as 'morpheus' and job as 'leader'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response data contains name as 'morpheus' and job as 'leader'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				720
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time is less than 2000ms": true,
+					"Response data contains name as 'morpheus' and job as 'leader'": true
+				}
+			]
+		},
+		{
+			"id": "1af9139e-1249-41cd-80b7-05b5b8ae9f2a",
+			"name": "Edit User 1",
+			"url": "https://reqres.in/api/users/2",
+			"time": 555,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true,
+				"verify Response data updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify Response data updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				555
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true,
+					"verify Response data updated": true
+				}
+			]
+		},
+		{
+			"id": "f86d71da-9298-4923-abb7-b3a0b7af278e",
+			"name": "Edit User 2",
+			"url": "https://reqres.in/api/users/2",
+			"time": 549,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true,
+				"verify Response data updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"verify Response data updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				549
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true,
+					"verify Response data updated": true
+				}
+			]
+		},
+		{
+			"id": "e51da2e2-b3bb-43e2-b47e-672e7edca2a9",
+			"name": "Delete User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 548,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Response time is less than 1000ms": true,
+				"Verify that the user with ID 2 no longer exists in the database": true,
+				"Validate that the response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the user with ID 2 no longer exists in the database": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that the response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				548
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Response time is less than 1000ms": true,
+					"Verify that the user with ID 2 no longer exists in the database": true,
+					"Validate that the response body is empty": true
+				}
+			]
+		},
+		{
+			"id": "c633ccc4-d3d3-4fa7-baf6-acadc186f77a",
+			"name": "Register Successful",
+			"url": "https://reqres.in/api/register",
+			"time": 551,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true,
+				"Response body contains a token for the registered user": true,
+				"Token format is valid": true,
+				"Response does not contain any error messages": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains a token for the registered user": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token format is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain any error messages": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				551
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true,
+					"Response body contains a token for the registered user": true,
+					"Token format is valid": true,
+					"Response does not contain any error messages": true
+				}
+			]
+		},
+		{
+			"id": "f7ce8092-f69c-4fac-8255-88c3bde4da33",
+			"name": "Rgister Unsuccessful",
+			"url": "https://reqres.in/api/register",
+			"time": 555,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time is less than 1000ms": true,
+				"Response body contains an error message": true,
+				"Response body error message is not empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains an error message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body error message is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				555
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time is less than 1000ms": true,
+					"Response body contains an error message": true,
+					"Response body error message is not empty": true
+				}
+			]
+		},
+		{
+			"id": "dc17c789-6693-47d3-aec2-ddc4aa03875a",
+			"name": "Login Successful",
+			"url": "https://reqres.in/api/login",
+			"time": 555,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true,
+				"Response body contains a valid token": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains a valid token": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				555
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true,
+					"Response body contains a valid token": true
+				}
+			]
+		},
+		{
+			"id": "cb57da17-e4d7-467c-86fb-aa3db1930dd3",
+			"name": "Login Unsuccessful",
+			"url": "https://reqres.in/api/login",
+			"time": 545,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time is less than 2000ms": true,
+				"Email format is invalid": true,
+				"Email is missing in the payload": true,
+				"Content type is application/json": true,
+				"Response has the 'error' field": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email format is invalid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is missing in the payload": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the 'error' field": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				545
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time is less than 2000ms": true,
+					"Email format is invalid": true,
+					"Email is missing in the payload": true,
+					"Content type is application/json": true,
+					"Response has the 'error' field": true
+				}
+			]
+		},
+		{
+			"id": "aa690cb9-ae44-4272-a62c-c9220890fc3d",
+			"name": "Delayed response",
+			"url": "https://reqres.in/api/users?delay=3",
+			"time": 3595,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is more than 1000ms": true,
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is more than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3595
+			],
+			"allTests": [
+				{
+					"Response time is more than 1000ms": true,
+					"Response status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 11520,
+	"collection": {
+		"requests": [
+			{
+				"id": "e90489e5-8e9b-4fee-a517-9daf3691b72d",
+				"method": "GET"
+			},
+			{
+				"id": "36262cac-ef0b-4a51-aa49-a8db2f6df7ef",
+				"method": "GET"
+			},
+			{
+				"id": "15b62d54-2a66-4292-913b-10f4b17e247b",
+				"method": "GET"
+			},
+			{
+				"id": "c03f9e8c-a9c0-4efd-b723-28920d03aa9e",
+				"method": "GET"
+			},
+			{
+				"id": "cabb2a32-751c-4b01-ac29-f22dee200fb6",
+				"method": "GET"
+			},
+			{
+				"id": "fcdb1ad5-5c24-4921-aadb-599345340ca9",
+				"method": "GET"
+			},
+			{
+				"id": "1033e09b-ef31-4b8c-99f5-83e74aaa6061",
+				"method": "POST"
+			},
+			{
+				"id": "1af9139e-1249-41cd-80b7-05b5b8ae9f2a",
+				"method": "PUT"
+			},
+			{
+				"id": "f86d71da-9298-4923-abb7-b3a0b7af278e",
+				"method": "PATCH"
+			},
+			{
+				"id": "e51da2e2-b3bb-43e2-b47e-672e7edca2a9",
+				"method": "DELETE"
+			},
+			{
+				"id": "c633ccc4-d3d3-4fa7-baf6-acadc186f77a",
+				"method": "POST"
+			},
+			{
+				"id": "f7ce8092-f69c-4fac-8255-88c3bde4da33",
+				"method": "POST"
+			},
+			{
+				"id": "dc17c789-6693-47d3-aec2-ddc4aa03875a",
+				"method": "POST"
+			},
+			{
+				"id": "cb57da17-e4d7-467c-86fb-aa3db1930dd3",
+				"method": "POST"
+			},
+			{
+				"id": "aa690cb9-ae44-4272-a62c-c9220890fc3d",
+				"method": "GET"
+			}
+		]
+	}
+}
